@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+<body>
+{% block content %}
+    <title>EDIT ADV..</title>
+    {% load crispy_forms_tags %}
+        <div class="container form" >
+
+<form method="POST" >
+    {% csrf_token %}
+    {{ form|crispy}}
+    <button  type="submit" class="btn btn-danger">Update</button>
+
+</form>
+
+    </div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,38 @@
+{% extends "registration/registration_base.html" %}
+{% load crispy_forms_tags %}
+{% load crispy_forms_field %}
+{% load i18n %}
+
+{% block title %}{% trans "Register for an account" %}{% endblock %}
+extends "registration/registration_base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+    {% load crispy_forms_field %}
+    {% load crispy_forms_tags %}
+    {% load crispy_forms_utils %}
+    {% load crispy_forms_filters%}
+    <div class="container form" >
+                <form method="post"  >
+                    {% csrf_token %}
+                    <h2 class="form-signin-heading">REGISTER</h2>
+                    {{ form|crispy }}
+    <input type="submit"class="btn btn-large btn-block btn-info" value="{% trans 'Submit' %}" />
+</form>
+    </div>
+
+{% endblock %}
+
+
+{% comment %}
+**registration/registration_form.html**
+Used to show the form users will fill out to register. By default, has
+the following context:
+
+``form``
+    The registration form. This will be an instance of some subclass
+    of ``django.forms.Form``; consult `Django's forms documentation
+    <http://docs.djangoproject.com/en/dev/topics/forms/>`_ for
+    information on how to display this in a template.
+{% endcomment %}

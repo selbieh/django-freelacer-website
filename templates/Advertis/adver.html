@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+    <div class="container form">
+        <title>ADD NEW JOB</title>
+
+        <form method="POST" >
+            {% csrf_token %}
+            {{ form|crispy}}
+            <button type="submit" class="btn btn-danger">ADD JOB</button>
+        </form>
+    </div>
+{% endblock %}

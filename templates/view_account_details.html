@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+     <div class="container" style="margin-bottom: 15px ;margin-top: 15px">
+     <table class="table table-bordered table-striped" >
+    <tbody>
+      <tr>
+        <th >FIRST NAME</th>
+        <td>{{ user.first_name }} </td>
+      </tr>
+      <tr>
+        <th >LAST NAME</th>
+        <td>{{ user.last_name }}</td>
+      </tr>
+      <tr >
+        <th >EMAIL</th>
+        <td>{{ user.email }}</td>
+      </tr>
+    </tbody>
+     </table>
+     <div class="container">
+                 <a href="{% url "personal"%}" role="button" class="btn btn-danger" >Edit MY ACCOUNT </a >
+     </div>
+     </div>
+
+{% endblock %}

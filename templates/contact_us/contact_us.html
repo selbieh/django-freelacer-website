@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+    {% load static %}
+
+
+{% block content %}
+    {% load crispy_forms_tags %}
+
+
+            <div class="container form" >
+                <h2> CONTACT US</h2>
+
+                <form method="POST">
+                {% csrf_token %}
+                {{ form|crispy }}
+            <button type="submit" class="btn btn-danger">send</button>
+                </form>
+            </div>
+
+
+{% endblock %}

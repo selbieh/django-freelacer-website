@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+
+     <div class="container" id="adv">
+     <table class="table">
+    <tbody>
+    <tr>
+      <th id="titel" >job titele</th>
+      <td>{{ adv.title }}</td>
+        <br>
+    </tr>
+     <tr>
+      <th  id="titel">job details</th>
+      <td>{{ adv.details }}</td>
+         <br>
+    </tr>
+     <tr>
+      <th id="titel" >job field</th>
+      <td>{{ adv.field }}</td>
+    </tr>
+    <tr>
+      <th id="titel" >Puplished since</th>
+      <td>{{ since }}</td>
+    </tr>
+
+    </tbody>
+</table>
+         <a tabindex="0" class="btn btn-lg btn-info" role="button" data-toggle="popover" data-trigger="focus" title="advertiser contact" data-content="
+          name : {{ adv.user }}
+          whatsapp:{{adv.user.profile.whatsapp}}
+          phone: {{adv.user.profile.phone }}
+          email:{{ adv.user.email }}
+          ">show contact</a>
+ ​<div id="demo">
+
+</div>
+    </div>
+
+    <script>
+    $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+    </script>
+{%endblock %}

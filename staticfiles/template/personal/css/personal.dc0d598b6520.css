@@ -1,0 +1,11 @@
+#id_password{
+    display:none
+}
+
+#hint_id_password a{
+    color: red;
+}
+
+#hint_id_password a:hover{
+    color: blue !important;
+}
