@@ -51,7 +51,7 @@ edit profile
 
 you ca also check it deployed i heruko :
 
-https://free-lancer-django.herokuapp.com/
+https://django-freelancer-web.herokuapp.com/
 
 
 
