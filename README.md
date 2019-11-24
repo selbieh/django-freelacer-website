@@ -1,11 +1,4 @@
 # django-free-lancer-demo
-
-Hello ;
-
-
-my name is Sayed Elbieh i am a free lance devoloper with the python#django and react.js and this is my first project.
-
-
 this project is a demo version for a free lance web-page .
 
 fell free to git repo and see my code. 
@@ -33,6 +26,8 @@ install the requirments localy in your local machie virtual env tehe runserver.
 
 features:
 logon-logout .
+Mail validation 
+Reset password
 
 
 
@@ -49,7 +44,7 @@ edit profile
 
 
 
-you ca also check it deployed i heruko :
+you can also check it deployed i heruko :
 
 https://django-freelancer-web.herokuapp.com/
 
